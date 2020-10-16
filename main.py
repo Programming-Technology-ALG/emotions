@@ -13,11 +13,11 @@ def check_world(i: int, corrected: str):
 
 with open('words.txt', "r") as f:
     dic = set(f.read().split())
-    print("Program starts. Type \exit to close.")
+    print("Program starts. Type _exit_ to close.")
     while True:
         string = ""
         temp = str(input("Input word: "))
-        if temp == "\exit":
+        if temp == "_exit_":
             break
         w = "  " + temp + "  "
         starts = [i for i, c in list(enumerate(w))[2:] if c != w[i - 1]]
